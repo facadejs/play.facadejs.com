@@ -1,0 +1,10 @@
+{
+    "devDependencies": {
+        "grunt": "0.4.4",
+        "grunt-contrib-watch": "0.6.1",
+        "grunt-shell": "0.6.4",
+        "grunt-manifest": "0.4.0",
+        "grunt-notify": "0.2.20",
+        "matchdep": "0.3.0"
+    }
+}
