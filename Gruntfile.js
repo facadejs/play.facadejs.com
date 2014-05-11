@@ -12,7 +12,7 @@ module.exports = function (grunt) {
 
             demos: {
 
-                command: 'python build.py > demos.js'
+                command: 'python build.py > static/demos.js'
 
             }
 
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                     network: ['*']
                 },
 
-                dest: 'manifest.appcache'
+                dest: 'static/manifest.appcache'
 
             }
 
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         watch: {
 
             demos: {
-                files: ['demos/**/*.js'],
+                files: ['static/demos/**/*.js'],
                 tasks: ['shell:demos', 'manifest']
             }
 
