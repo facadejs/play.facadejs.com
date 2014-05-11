@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         watch: {
 
             demos: {
-                files: ['playground/demos/**/*.js'],
+                files: ['demos/**/*.js'],
                 tasks: ['shell:demos', 'manifest']
             }
 
