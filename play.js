@@ -105,11 +105,11 @@
 
         if (window.location.hash && $('a[href="' + window.location.hash + '"]').length) {
 
-            $('a[href="' + window.location.hash + '"]').click();
+            $('a[href="' + window.location.hash + '"]')[0].click();
 
         } else {
 
-            $('.files a').click();
+            $('.files a')[0].click();
 
         }
 
