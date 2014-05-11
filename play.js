@@ -115,4 +115,26 @@
 
     });
 
+    window.addEventListener('load', function () {
+
+        if (window.applicationCache !== undefined) {
+
+            window.applicationCache.addEventListener('updateready', function () {
+
+                if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+
+                    if (confirm('A new version of play.facadejs.com is available. Would you like to reload now?')) {
+
+                        window.location.reload();
+
+                    }
+
+                }
+
+            });
+
+        }
+
+    });
+
 }());
