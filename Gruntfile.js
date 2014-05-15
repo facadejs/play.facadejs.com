@@ -23,13 +23,13 @@ module.exports = function (grunt) {
             generate: {
 
                 src: [
-                    'index.html',
-                    'stage.html',
-                    'css/styles.css',
-                    'demos.js',
-                    'play.js',
-                    'images/scott-pilgrim.png',
-                    'libs/facade.min.js',
+                    'static/index.html',
+                    'static/stage.html',
+                    'static/css/styles.css',
+                    'static/demos.js',
+                    'static/play.js',
+                    'static/images/scott-pilgrim.png',
+                    'static/libs/facade.min.js',
                 ],
 
                 options: {
