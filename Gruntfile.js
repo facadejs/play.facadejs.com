@@ -22,23 +22,26 @@ module.exports = function (grunt) {
 
             generate: {
 
-                src: [
-                    'static/index.html',
-                    'static/stage.html',
-                    'static/css/styles.css',
-                    'static/demos.js',
-                    'static/play.js',
-                    'static/images/scott-pilgrim.png',
-                    'static/libs/facade.min.js',
-                ],
+                src: [],
 
                 options: {
+
                     cache: [
+
+                        'index.html',
+                        'stage.html',
+                        'css/styles.css',
+                        'demos.js',
+                        'play.js',
+                        'images/scott-pilgrim.png',
+                        'libs/facade.min.js',
+
                         'http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js',
                         'http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js',
                         'http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/worker-javascript.js',
                         'http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js',
-                        'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js',
+                        'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js'
+
                     ],
                     network: ['*']
                 },
