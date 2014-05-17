@@ -8,6 +8,14 @@ var circle = new Facade.Circle({
         closePath: false,
         anchor: 'center'
     }),
+    num = new Facade.Text(0, {
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        fontFamily: 'Helvetica',
+        fontSize: 50,
+        fillStyle: '#333E4B',
+        anchor: 'center'
+    }),
     progress = 0;
 
 stage.draw(function () {
@@ -17,6 +25,8 @@ stage.draw(function () {
     if (progress < 100) {
 
         progress = progress + 1;
+
+        num.setText(progress);
 
         if (progress >= 100) {
 
@@ -30,9 +40,11 @@ stage.draw(function () {
 
     }
 
+    this.addToStage(num);
     this.addToStage(circle, { opacity: 25 });
     this.addToStage(circle, { end: (progress / 100) * 360 });
 
+    // debugBoundingBox(num);
     // debugBoundingBox(circle);
 
 });
