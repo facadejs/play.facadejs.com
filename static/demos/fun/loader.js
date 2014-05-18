@@ -5,6 +5,7 @@ var circle = new Facade.Circle({
         fillStyle: '',
         strokeStyle: '#333E4B',
         lineWidth: 20,
+        lineCap: 'round',
         closePath: false,
         anchor: 'center'
     }),
