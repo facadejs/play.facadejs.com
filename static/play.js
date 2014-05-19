@@ -123,11 +123,15 @@
 
                 if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
 
-                    if (confirm('A new version of play.facadejs.com is available. Would you like to reload now?')) {
+                    $('.update').show();
 
-                        window.location.reload();
+                    $('.update a[href="#hide"]').on('click', function (e) {
 
-                    }
+                        e.preventDefault();
+
+                        $('.update').hide();
+
+                    });
 
                 }
 
