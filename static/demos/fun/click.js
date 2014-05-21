@@ -62,5 +62,12 @@ function handleListener (e) {
 
 }
 
-stage.canvas.addEventListener('click', handleListener);
-stage.canvas.addEventListener('touchstart', handleListener);
+if ('ontouchstart' in document.documentElement) {
+
+    stage.canvas.addEventListener('touchstart', handleListener);
+
+} else {
+
+    stage.canvas.addEventListener('click', handleListener);
+
+}
