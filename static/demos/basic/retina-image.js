@@ -8,7 +8,7 @@ var group = new Facade.Group({
         scale: 0.5
     }),
     label = new Facade.Text('Click to see non-retina image', {
-        x: 200,
+        x: 189,
         y: 370,
         anchor: 'center'
     });
