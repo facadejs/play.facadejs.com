@@ -38,11 +38,11 @@ module.exports = function (grunt) {
                         'images/octocat@2x.png',
                         'libs/facade.min.js',
 
-                        'http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js',
-                        'http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js',
-                        'http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/worker-javascript.js',
-                        'http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js',
-                        'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js'
+                        'http://cdn.jsdelivr.net/ace/1.1.3/min/ace.js',
+                        'http://cdn.jsdelivr.net/ace/1.1.3/min/mode-javascript.js',
+                        'http://cdn.jsdelivr.net/ace/1.1.3/min/worker-javascript.js',
+                        'http://cdn.jsdelivr.net/handlebarsjs/1.3.0/handlebars.min.js',
+                        'http://cdn.jsdelivr.net/zepto/1.1.3/zepto.min.js'
 
                     ],
                     network: ['*']
