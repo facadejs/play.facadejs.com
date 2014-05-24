@@ -8,6 +8,25 @@ module.exports = function (grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        handlebars: {
+
+            compile: {
+
+                options: {
+                    namespace: 'templates',
+                    processName: function(path) {
+                        return path.match(/([^\/]+)\.hbs/)[1];
+                    }
+                },
+
+                files: {
+                    'static/templates/templates.js': ['static/templates/handlebars/**/*.hbs']
+                }
+
+            }
+
+        },
+
         shell: {
 
             demos: {
@@ -30,9 +49,10 @@ module.exports = function (grunt) {
 
                         'index.html',
                         'stage.html',
-                        'css/styles.css',
                         'demos.js',
                         'play.js',
+                        'css/styles.css',
+                        'templates/templates.js',
                         'images/scott-pilgrim.png',
                         'images/octocat.png',
                         'images/octocat@2x.png',
@@ -56,6 +76,11 @@ module.exports = function (grunt) {
 
         watch: {
 
+            handlebars: {
+                files: ['static/templates/handlebars/**/*.hbs'],
+                tasks: ['handlebars']
+            },
+
             demos: {
                 files: ['static/demos/**/*.js'],
                 tasks: ['shell:demos', 'manifest']
@@ -65,6 +90,6 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', [ 'shell:demos', 'manifest' ]);
+    grunt.registerTask('default', [ 'handlebars', 'shell:demos', 'manifest' ]);
 
 };

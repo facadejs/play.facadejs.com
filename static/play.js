@@ -7,7 +7,6 @@
         stage = document.querySelector('.stage'),
         iframe = document.querySelector('.stage iframe'),
         editor = ace.edit('ace-editor'),
-        template = Handlebars.compile(document.querySelector('#template-file-list').innerHTML),
         live_script = null,
         change_timeout = null;
 
@@ -15,7 +14,7 @@
 
         if (String(typeof demos) !== 'undefined') {
 
-            files.innerHTML = template({ files: demos });
+            files.innerHTML = templates.files({ files: demos });
 
         }
 
