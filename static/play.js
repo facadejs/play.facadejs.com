@@ -132,6 +132,14 @@
 
                     });
 
+                    $('.update a[href="#refresh"]').on('click', function (e) {
+
+                        e.preventDefault();
+
+                        window.location.reload();
+
+                    });
+
                 }
 
             });
