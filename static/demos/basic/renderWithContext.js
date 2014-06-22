@@ -8,7 +8,7 @@ stage.draw(function () {
         fillRect: [0, 0, 200, 200],
         lineWidth: 10,
         strokeStyle: '#333E4B',
-        strokeRect: [0, 0, 200, 200],
+        strokeRect: [0, 0, 200, 200]
     });
 
 });
