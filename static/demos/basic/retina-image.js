@@ -13,7 +13,12 @@ var group = new Facade.Group({
         anchor: 'center'
     });
 
-group.addToGroup(octocat_retina);
+octocat_retina.image.addEventListener('load', function () {
+
+    group.addToGroup(octocat_retina);
+
+});
+
 group.addToGroup(label);
 
 stage.draw(function () {
