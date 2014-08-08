@@ -4,7 +4,7 @@
     },
     "main": "web.js",
     "dependencies": {
-        "express": "4.7.2"
+        "express": "4.8.2"
     },
     "devDependencies": {
         "grunt": "0.4.5",
@@ -12,7 +12,7 @@
         "grunt-contrib-handlebars": "0.8.0",
         "grunt-shell": "0.7.0",
         "grunt-manifest": "0.4.0",
-        "grunt-notify": "0.3.0",
+        "grunt-notify": "0.3.1",
         "matchdep": "0.3.0"
     }
 }
