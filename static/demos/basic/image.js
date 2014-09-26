@@ -6,6 +6,7 @@ var image = new Facade.Image('images/scott-pilgrim.png', {
     anchor: 'center'
 });
 
+stage.context.mozImageSmoothingEnabled = false;
 stage.context.webkitImageSmoothingEnabled = false;
 
 stage.draw(function () {

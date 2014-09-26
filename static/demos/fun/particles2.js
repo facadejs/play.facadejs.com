@@ -1,5 +1,4 @@
-var TO_RADIANS = Math.PI * 180,
-    active = [],
+var active = [],
     spread = 25,
     speed = 5,
     angle = spread,
